@@ -1,0 +1,117 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnHumanVsHuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Играть с человеком"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnHumanVsBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Играть с ботом"
+        android:layout_marginBottom="32dp"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_gravity="center">
+
+        <!-- Кнопки игрового поля (3x3) -->
+        <Button
+            android:id="@+id/button00"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/button02"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:textSize="24sp"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сбросить игру"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/player1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1: 0"/>
+
+    <TextView
+        android:id="@+id/player2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2: 0"/>
+</LinearLayout>
